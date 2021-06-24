@@ -1,4 +1,6 @@
 # Final Version of main.py
+# To use this Image captionizer please download this dataset
+# Link: https://www.kaggle.com/adityajn105/flickr8k
 import matplotlib.pyplot as plt
 import torch
 import torchvision.transforms as transforms
