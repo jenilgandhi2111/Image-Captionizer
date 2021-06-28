@@ -15,4 +15,5 @@
 <ul>
 <li>We could add visual attention to make it perform better</li>
 <li>We could use transformer networks for better caption generation</li>
+<li>We could also add teacher forcing and fine tune the teacher_force_ratio to get good results</li>
 </ul>
