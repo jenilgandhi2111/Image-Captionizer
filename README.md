@@ -7,5 +7,5 @@
     Architecture of the system is as below<br/>
 </br>
 <kbd>
-<img src = "https://github.com/jenilgandhi2111/DCGAN-MNIST/blob/main/Assets/Diagram.png">
+<img src = "https://github.com/jenilgandhi2111/DCGAN-MNIST/blob/master/Assets/Diagram.png">
 </kbd>
