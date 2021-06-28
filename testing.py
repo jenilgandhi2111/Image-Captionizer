@@ -19,16 +19,3 @@ def print_test_examples(model, device, dataset):
     print("Caption-1:"+" ".join(model.captionize(tst_2.to(device), dataset.vocab)))
 
     model.train()
-
-
-def save_checkpoint(state, filename="Image_Captionizer.pth.tar"):
-    print("=> Saving checkpoint")
-    torch.save(state, filename)
-
-
-def load_checkpoint(checkpoint, model, optimizer):
-    print("=> Loading checkpoint")
-    model.load_state_dict(checkpoint["state_dict"])
-    optimizer.load_state_dict(checkpoint["optimizer"])
-    step = checkpoint["step"]
-    return step

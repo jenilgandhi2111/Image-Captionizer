@@ -7,7 +7,7 @@ import torchvision.transforms as transforms
 import torch.optim as optim
 import torch.nn as nn
 from preprocessing import get_loader
-from testing import save_checkpoint, load_checkpoint, print_test_examples
+from testing import print_test_examples
 from model import ImageCaptionizer
 from tqdm import tqdm
 
@@ -34,15 +34,12 @@ def train():
 
     # HyperParams
     device = torch.device("cpu")
-    load_model = False
-    save_checkpoint = False
     embed_size = 256
     hidden_size = 256
     vocab_size = len(dataset.vocab)
     num_layers = 1
     lr = 3e-4
     num_epochs = 1
-    train_cnn = False
 
     model = ImageCaptionizer(embed_size, hidden_size, vocab_size, num_layers)
     lossfn = nn.CrossEntropyLoss(ignore_index=dataset.vocab.stoi["<PAD>"])

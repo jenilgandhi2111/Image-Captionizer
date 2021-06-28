@@ -1,1 +1,2 @@
-# Image-Captionizer
+# Image Captionizer
+### Description:
