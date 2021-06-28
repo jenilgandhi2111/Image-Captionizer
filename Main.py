@@ -27,8 +27,8 @@ def train():
 
     # Getting the dataset from getloader
     loader, dataset = get_loader(
-        root_folder="/content/gdrive/MyDrive/KaggleDatasets/flickr8k/Images",
-        annotation_file="/content/gdrive/MyDrive/KaggleDatasets/flickr8k/captions.txt",
+        root_folder="Image-Captionizer\Flickr8K\Images",
+        annotation_file="Image-Captionizer\Flickr8K\captions.txt",
         transform=transform, num_workers=2
     )
 
